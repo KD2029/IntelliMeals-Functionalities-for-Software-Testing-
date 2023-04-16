@@ -28,3 +28,7 @@ Route::get('/admindashboard',[crudcontroller::class,'index'])->name('show');
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/add', function () {
+    return view('add');
+});
